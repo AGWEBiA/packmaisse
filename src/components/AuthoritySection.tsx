@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
+import andersonImg from "@/assets/anderson_maisse.webp";
 
 const AuthoritySection = () => (
   <section className="py-20 sm:py-28 bg-background">
@@ -7,9 +8,7 @@ const AuthoritySection = () => (
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         <ScrollReveal direction="left">
           <div className="flex flex-col items-center lg:items-start">
-            <div className="w-28 h-28 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-4">
-              <span className="text-primary-foreground font-[Poppins] font-bold text-4xl">AM</span>
-            </div>
+            <img src={andersonImg} alt="Anderson Maisse" className="w-28 h-28 rounded-full object-cover border-2 border-accent mb-4" />
             <h3 className="font-[Poppins] font-bold text-foreground text-xl">Anderson Maisse</h3>
             <p className="text-muted-foreground text-sm mb-6">Contador & Mentor de Contadores</p>
             <div className="space-y-3">
