@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
+import andersonImg from "@/assets/anderson_maisse.webp";
 
 const AuthoritySection = () => (
   <section className="py-20 sm:py-28 bg-background">
