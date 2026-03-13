@@ -11,35 +11,35 @@ const faqs = [
 ];
 
 const FaqSection = () => (
-  <section id="faq" className="py-24 sm:py-32 bg-secondary scroll-mt-20 relative">
+  <section id="faq" className="py-16 sm:py-24 lg:py-32 bg-secondary scroll-mt-20 relative">
     <div className="max-w-3xl mx-auto px-4 sm:px-6">
       <ScrollReveal>
-        <div className="text-center mb-14">
+        <div className="text-center mb-10 sm:mb-14">
           <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold uppercase tracking-widest">
             FAQ
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-[Poppins] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-4 font-[Poppins] tracking-tight">
             Perguntas
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Frequentes</span>
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-sm sm:text-base text-muted-foreground">
             Respostas para as dúvidas mais comuns sobre o Pack Contador Estratégico IA
           </p>
         </div>
       </ScrollReveal>
 
       <ScrollReveal delay={0.15}>
-        <Accordion type="single" collapsible className="space-y-3">
+        <Accordion type="single" collapsible className="space-y-2 sm:space-y-3">
           {faqs.map((f, i) => (
             <AccordionItem
               key={i}
               value={`faq-${i}`}
-              className="glass-card rounded-2xl px-6 data-[state=open]:shadow-lg data-[state=open]:border-accent/30 transition-all duration-300"
+              className="glass-card rounded-xl sm:rounded-2xl px-4 sm:px-6 data-[state=open]:shadow-lg data-[state=open]:border-accent/30 transition-all duration-300"
             >
-              <AccordionTrigger className="text-left font-[Poppins] font-semibold text-foreground hover:no-underline py-5 text-[15px]">
+              <AccordionTrigger className="text-left font-[Poppins] font-semibold text-foreground hover:no-underline py-4 sm:py-5 text-sm sm:text-[15px]">
                 {f.q}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+              <AccordionContent className="text-xs sm:text-base text-muted-foreground pb-4 sm:pb-5 leading-relaxed">
                 {f.a}
               </AccordionContent>
             </AccordionItem>
