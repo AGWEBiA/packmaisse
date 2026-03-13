@@ -18,7 +18,7 @@ const FaqSection = () => (
           Perguntas Frequentes
         </h2>
         <p className="text-center text-muted-foreground mb-12">
-          Respostas para as dúvidas mais comuns sobre o Acelerador Contábil IA
+          Respostas para as dúvidas mais comuns sobre o Pack Contador Estratégico IA
         </p>
       </ScrollReveal>
 

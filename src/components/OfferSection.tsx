@@ -22,7 +22,7 @@ const OfferSection = () => {
             Sua Oportunidade de Acelerar Chegou
           </h2>
           <p className="text-center text-muted-foreground mb-14">
-            Ao adquirir o Acelerador Contábil IA hoje, você recebe:
+            Ao adquirir o Pack Contador Estratégico IA hoje, você recebe:
           </p>
         </ScrollReveal>
 
