@@ -84,7 +84,7 @@ const HeroSection = () => {
                 <div className="w-52 sm:w-80 h-52 sm:h-80 bg-accent/15 rounded-full blur-[80px] sm:blur-[100px]" />
               </div>
 
-              <div className="relative w-56 sm:w-72 md:w-80 lg:w-full max-w-sm mx-auto">
+              <div className="relative w-44 sm:w-64 md:w-72 lg:w-full max-w-sm mx-auto">
                 {/* Main photo card */}
                 <div className="rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-primary-foreground/10 shadow-2xl shadow-accent/10">
                   <img
