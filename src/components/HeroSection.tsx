@@ -118,7 +118,7 @@ const HeroSection = () => {
                     <TrendingUp size={20} className="text-primary-foreground" />
                   </div>
                   <div>
-                    <p className="text-foreground font-[Poppins] font-bold text-sm">+500</p>
+                    <p className="text-foreground font-[Poppins] font-bold text-sm">+3000</p>
                     <p className="text-muted-foreground text-xs">contadores atendidos</p>
                   </div>
                 </div>
