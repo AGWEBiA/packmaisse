@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,35 +6,43 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 20% 15%;
+    --background: 220 25% 97%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 15%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 15%;
+    --popover-foreground: 222 47% 11%;
 
     --primary: 222 62% 28%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 20% 15%;
+    --secondary: 220 20% 94%;
+    --secondary-foreground: 222 47% 11%;
 
     --muted: 220 14% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 160 75% 42%;
+    --accent: 160 75% 38%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
     --ring: 222 62% 28%;
 
     --radius: 0.75rem;
+
+    /* Custom tokens */
+    --glass: 0 0% 100% / 0.7;
+    --glass-border: 0 0% 100% / 0.3;
+    --hero-gradient: linear-gradient(135deg, hsl(222 62% 28%) 0%, hsl(222 50% 18%) 40%, hsl(200 60% 12%) 100%);
+    --section-pattern: radial-gradient(circle at 1px 1px, hsl(222 62% 28% / 0.03) 1px, transparent 0);
+    --glow-primary: 222 62% 28%;
+    --glow-accent: 160 75% 38%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -47,15 +55,15 @@
   }
 
   .dark {
-    --background: 222 84% 5%;
+    --background: 222 47% 6%;
     --foreground: 210 40% 98%;
-    --card: 222 84% 5%;
+    --card: 222 47% 9%;
     --card-foreground: 210 40% 98%;
-    --popover: 222 84% 5%;
+    --popover: 222 47% 9%;
     --popover-foreground: 210 40% 98%;
     --primary: 210 40% 98%;
     --primary-foreground: 222 47% 11%;
-    --secondary: 217 33% 18%;
+    --secondary: 217 33% 14%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217 33% 18%;
     --muted-foreground: 215 20% 65%;
@@ -85,9 +93,40 @@
   }
 }
 
+@layer components {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50 shadow-lg;
+  }
+  .glass-header {
+    @apply bg-background/80 backdrop-blur-xl border-b border-border/50;
+  }
+  .section-pattern {
+    background-image: var(--section-pattern);
+    background-size: 24px 24px;
+  }
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary;
+    background-size: 200% auto;
+  }
+  .glow-accent {
+    box-shadow: 0 0 40px -10px hsl(var(--glow-accent) / 0.3),
+                0 0 80px -20px hsl(var(--glow-accent) / 0.15);
+  }
+  .glow-primary {
+    box-shadow: 0 0 40px -10px hsl(var(--glow-primary) / 0.3),
+                0 0 80px -20px hsl(var(--glow-primary) / 0.15);
+  }
+  .card-hover {
+    @apply transition-all duration-500 hover:shadow-xl hover:-translate-y-1.5 hover:border-accent/30;
+  }
+  .hero-dark {
+    background: var(--hero-gradient);
+  }
+}
+
 @keyframes pulse-soft {
-  0%, 100% { box-shadow: 0 0 0 0 hsla(222, 62%, 28%, 0.4); }
-  50% { box-shadow: 0 0 0 12px hsla(222, 62%, 28%, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 hsl(var(--glow-accent) / 0.5); }
+  50% { box-shadow: 0 0 0 14px hsl(var(--glow-accent) / 0); }
 }
 
 .animate-pulse-soft {
@@ -96,9 +135,39 @@
 
 @keyframes bounce-arrow {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
+  50% { transform: translateY(10px); }
 }
 
 .animate-bounce-arrow {
   animation: bounce-arrow 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-8px) rotate(1deg); }
+  66% { transform: translateY(4px) rotate(-1deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-shimmer {
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
 }
