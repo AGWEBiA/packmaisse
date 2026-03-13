@@ -23,7 +23,7 @@ const ProblemsSection = () => (
             <span className="text-destructive"> já sentiu isso na pele</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Você não está sozinho. Esses são os desafios que mais de 500 escritórios contábeis enfrentam todos os dias.
+            Você não está sozinho. Esses são os desafios que mais de 3000 escritórios contábeis enfrentam todos os dias.
           </p>
         </div>
       </ScrollReveal>
