@@ -42,7 +42,7 @@ const FormSection = () => {
             Comece Sua Transformação Hoje
           </h2>
           <p className="text-center text-muted-foreground mb-10">
-            Preencha o formulário abaixo para acessar o Acelerador Contábil IA
+            Preencha o formulário abaixo para acessar o Pack Contador Estratégico IA
           </p>
         </ScrollReveal>
 

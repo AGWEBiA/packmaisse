@@ -2,9 +2,9 @@ import { Star } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const testimonials = [
-  { name: "João P.", loc: "São Paulo/SP", role: "Contador", text: "Eu estava cético no início, mas o Acelerador Contábil IA mudou o jogo para mim. O Social Cont me deu uma voz nas redes sociais e, em menos de um mês, fechei dois novos clientes que vieram pelo Instagram. Finalmente estou sendo visto como uma referência!" },
+  { name: "João P.", loc: "São Paulo/SP", role: "Contador", text: "Eu estava cético no início, mas o Pack Contador Estratégico IA mudou o jogo para mim. O Social Cont me deu uma voz nas redes sociais e, em menos de um mês, fechei dois novos clientes que vieram pelo Instagram. Finalmente estou sendo visto como uma referência!" },
   { name: "Carla M.", loc: "Belo Horizonte/MG", role: "Contadora", text: "A Mara Salles é incrível! Usei um dos scripts para renegociar com um cliente antigo que estava com honorários defasados. Consegui um aumento de 40% e o cliente ainda me agradeceu pela nova proposta de valor. Inacreditável!" },
-  { name: "Roberto S.", loc: "Curitiba/PR", role: "Sócio de Escritório", text: "Implementamos o Acelerador em todo nosso escritório. A produtividade aumentou 35% em apenas 2 meses. Nossos clientes agora recebem análises muito mais profundas e consultivas. O ROI foi imediato." },
+  { name: "Roberto S.", loc: "Curitiba/PR", role: "Sócio de Escritório", text: "Implementamos o Pack Contador Estratégico em todo nosso escritório. A produtividade aumentou 35% em apenas 2 meses. Nossos clientes agora recebem análises muito mais profundas e consultivas. O ROI foi imediato." },
 ];
 
 const TestimonialsSection = () => (

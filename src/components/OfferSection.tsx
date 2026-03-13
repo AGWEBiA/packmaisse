@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import ScrollReveal from "./ScrollReveal";
 
 const items = [
-  "Acesso Vitalício ao Pack Acelerador Contábil IA",
+  "Acesso Vitalício ao Pack Contador Estratégico IA",
   "Agente Social Cont para dominar as redes sociais",
   "Agente Mara Salles para vender mais e melhor",
   "Agente Contuber para se tornar autoridade no YouTube",
@@ -22,7 +22,7 @@ const OfferSection = () => {
             Sua Oportunidade de Acelerar Chegou
           </h2>
           <p className="text-center text-muted-foreground mb-14">
-            Ao adquirir o Acelerador Contábil IA hoje, você recebe:
+            Ao adquirir o Pack Contador Estratégico IA hoje, você recebe:
           </p>
         </ScrollReveal>
 
