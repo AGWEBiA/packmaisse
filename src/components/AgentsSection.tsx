@@ -9,42 +9,41 @@ const agents = [
 ];
 
 const AgentsSection = () => (
-  <section id="agents" className="py-24 sm:py-32 bg-background section-pattern scroll-mt-20 relative">
+  <section id="agents" className="py-16 sm:py-24 lg:py-32 bg-background section-pattern scroll-mt-20 relative">
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
       <ScrollReveal>
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-semibold uppercase tracking-widest">
             Os 4 Agentes
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-[Poppins] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-4 font-[Poppins] tracking-tight">
             Conheça seu Novo Time de
             <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Especialistas de IA</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
             Cada agente foi treinado especificamente para resolver um dos maiores desafios dos contadores modernos.
           </p>
         </div>
       </ScrollReveal>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
         {agents.map((a, i) => (
           <ScrollReveal key={i} delay={i * 0.1}>
-            <div className="glass-card rounded-2xl p-7 card-hover h-full flex flex-col group relative overflow-hidden">
-              {/* Subtle gradient overlay on hover */}
+            <div className="glass-card rounded-xl sm:rounded-2xl p-5 sm:p-7 card-hover h-full flex flex-col group relative overflow-hidden">
               <div className={`absolute inset-0 bg-gradient-to-br ${a.gradient} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-500`} />
 
               <div className="relative z-10 flex flex-col h-full">
-                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${a.gradient} flex items-center justify-center mb-5 shadow-lg ${a.glow} group-hover:scale-110 transition-transform duration-300`}>
-                  <a.icon className="text-primary-foreground" size={26} />
+                <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl bg-gradient-to-br ${a.gradient} flex items-center justify-center mb-4 sm:mb-5 shadow-lg ${a.glow} group-hover:scale-110 transition-transform duration-300`}>
+                  <a.icon className="text-primary-foreground" size={22} />
                 </div>
-                <h3 className="font-[Poppins] font-bold text-foreground text-xl mb-2">{a.name}</h3>
-                <p className="text-sm text-accent font-semibold mb-2 flex items-center gap-1.5">
+                <h3 className="font-[Poppins] font-bold text-foreground text-lg sm:text-xl mb-2">{a.name}</h3>
+                <p className="text-xs sm:text-sm text-accent font-semibold mb-2 flex items-center gap-1.5">
                   <ArrowRight size={12} />
                   {a.benefit}
                 </p>
-                <p className="text-sm text-muted-foreground mb-3 font-medium">{a.does}</p>
-                <p className="text-sm text-muted-foreground mt-auto leading-relaxed">{a.desc}</p>
+                <p className="text-xs sm:text-sm text-muted-foreground mb-3 font-medium">{a.does}</p>
+                <p className="text-xs sm:text-sm text-muted-foreground mt-auto leading-relaxed">{a.desc}</p>
               </div>
             </div>
           </ScrollReveal>
