@@ -6,7 +6,6 @@ import AgentsSection from "@/components/AgentsSection";
 import AuthoritySection from "@/components/AuthoritySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import OfferSection from "@/components/OfferSection";
-import FormSection from "@/components/FormSection";
 import FaqSection from "@/components/FaqSection";
 import FinalCtaSection from "@/components/FinalCtaSection";
 
@@ -20,7 +19,6 @@ const Index = () => (
     <AuthoritySection />
     <TestimonialsSection />
     <OfferSection />
-    <FormSection />
     <FaqSection />
     <FinalCtaSection />
   </>

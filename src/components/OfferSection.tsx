@@ -12,7 +12,7 @@ const items = [
 ];
 
 const OfferSection = () => {
-  const scroll = () => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" });
+  const scroll = () => document.getElementById("offer")?.scrollIntoView({ behavior: "smooth" });
 
   return (
     <section className="py-16 sm:py-24 lg:py-32 bg-secondary relative overflow-hidden">
