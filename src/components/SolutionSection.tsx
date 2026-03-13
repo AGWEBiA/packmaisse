@@ -11,10 +11,10 @@ const SolutionSection = () => (
               <Sparkles size={14} /> A Solução
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6 font-[Poppins]">
-              Apresentando: O Acelerador Contábil IA
+               Apresentando: O Pack Contador Estratégico IA
             </h2>
             <p className="text-muted-foreground mb-4">
-              O Acelerador Contábil IA é um pack com 4 agentes de inteligência artificial, treinados especificamente para resolver os maiores desafios dos contadores modernos.
+               O Pack Contador Estratégico IA é um pack com 4 agentes de inteligência artificial, treinados especificamente para resolver os maiores desafios dos contadores modernos.
             </p>
             <p className="text-muted-foreground mb-4">
               Cada agente atua como um especialista dedicado, trabalhando 24h por dia para automatizar tarefas, atrair clientes, aumentar honorários e posicionar você como consultor estratégico.

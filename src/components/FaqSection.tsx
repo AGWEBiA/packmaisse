@@ -2,7 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import ScrollReveal from "./ScrollReveal";
 
 const faqs = [
-  { q: "Preciso ser um expert em tecnologia para usar os agentes?", a: "Não! Os agentes foram desenhados para serem extremamente fáceis de usar. Se você sabe digitar uma pergunta, você sabe usar o Acelerador Contábil IA. Tudo é intuitivo e foi testado com contadores que não têm experiência com IA." },
+  { q: "Preciso ser um expert em tecnologia para usar os agentes?", a: "Não! Os agentes foram desenhados para serem extremamente fáceis de usar. Se você sabe digitar uma pergunta, você sabe usar o Pack Contador Estratégico IA. Tudo é intuitivo e foi testado com contadores que não têm experiência com IA." },
   { q: "Isso funciona para o meu nicho de contabilidade?", a: "Sim. Os agentes são treinados em princípios universais de marketing, vendas e análise financeira, podendo ser adaptados para qualquer nicho contábil. Seja você especialista em PJ, MEI, Simples Nacional ou Lucro Presumido, os agentes funcionam." },
   { q: "Terei suporte se tiver dificuldades?", a: "Sim. Você terá acesso à nossa comunidade de usuários e a um canal de suporte para tirar todas as suas dúvidas. Além disso, você receberá aulas e tutoriais exclusivos sobre como usar cada agente ao máximo." },
   { q: "Por quanto tempo terei acesso ao pack?", a: "O acesso é vitalício! Você paga uma vez e tem acesso a todos os agentes e futuras atualizações para sempre. Não há assinatura mensal ou anual. É um investimento único que continua gerando retorno indefinidamente." },

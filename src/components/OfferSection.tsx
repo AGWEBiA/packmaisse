@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import ScrollReveal from "./ScrollReveal";
 
 const items = [
-  "Acesso Vitalício ao Pack Acelerador Contábil IA",
+  "Acesso Vitalício ao Pack Contador Estratégico IA",
   "Agente Social Cont para dominar as redes sociais",
   "Agente Mara Salles para vender mais e melhor",
   "Agente Contuber para se tornar autoridade no YouTube",
