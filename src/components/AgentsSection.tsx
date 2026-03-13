@@ -1,36 +1,51 @@
-import { Smartphone, Handshake, Youtube, BarChart3 } from "lucide-react";
+import { Smartphone, Handshake, Youtube, BarChart3, ArrowRight } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const agents = [
-  { icon: Smartphone, name: "Social Cont", does: "Cria posts, legendas e roteiros para redes sociais", benefit: "Transforma sua presença online e atrai clientes qualificados", desc: "Chega de se preocupar com o que postar. Ele posiciona você como uma autoridade no mercado, gerando um fluxo constante de oportunidades.", color: "from-primary to-primary/70" },
-  { icon: Handshake, name: "Mara Salles", does: "Desenvolve scripts de vendas e negociação", benefit: "Aumenta sua conversão e seus honorários", desc: "Com scripts testados e validados, você terá a confiança para vender serviços de maior valor, renegociar contratos e fechar mais negócios.", color: "from-accent to-accent/70" },
-  { icon: Youtube, name: "Contuber", does: "Cria roteiros otimizados para vídeos no YouTube com SEO", benefit: "Expande seu alcance e constrói uma audiência fiel", desc: "O YouTube é uma poderosa ferramenta de marketing. Este agente cria o conteúdo certo para você se destacar, educar seu público e gerar leads.", color: "from-primary to-accent" },
-  { icon: BarChart3, name: "Analista de DRE", does: "Analisa Demonstrações de Resultados e gera insights", benefit: "Transforma dados em lucro para você e seus clientes", desc: "Em vez de apenas entregar relatórios, você fornecerá análises profundas, ajudando seus clientes a tomar decisões mais inteligentes.", color: "from-accent to-primary" },
+  { icon: Smartphone, name: "Social Cont", does: "Cria posts, legendas e roteiros para redes sociais", benefit: "Transforma sua presença online e atrai clientes qualificados", desc: "Chega de se preocupar com o que postar. Ele posiciona você como uma autoridade no mercado, gerando um fluxo constante de oportunidades.", gradient: "from-blue-600 to-blue-400", glow: "shadow-blue-500/20" },
+  { icon: Handshake, name: "Mara Salles", does: "Desenvolve scripts de vendas e negociação", benefit: "Aumenta sua conversão e seus honorários", desc: "Com scripts testados e validados, você terá a confiança para vender serviços de maior valor, renegociar contratos e fechar mais negócios.", gradient: "from-accent to-emerald-400", glow: "shadow-accent/20" },
+  { icon: Youtube, name: "Contuber", does: "Cria roteiros otimizados para vídeos no YouTube com SEO", benefit: "Expande seu alcance e constrói uma audiência fiel", desc: "O YouTube é uma poderosa ferramenta de marketing. Este agente cria o conteúdo certo para você se destacar, educar seu público e gerar leads.", gradient: "from-red-600 to-red-400", glow: "shadow-red-500/20" },
+  { icon: BarChart3, name: "Analista de DRE", does: "Analisa Demonstrações de Resultados e gera insights", benefit: "Transforma dados em lucro para você e seus clientes", desc: "Em vez de apenas entregar relatórios, você fornecerá análises profundas, ajudando seus clientes a tomar decisões mais inteligentes.", gradient: "from-violet-600 to-violet-400", glow: "shadow-violet-500/20" },
 ];
 
 const AgentsSection = () => (
-  <section id="agents" className="py-20 sm:py-28 bg-secondary scroll-mt-20">
+  <section id="agents" className="py-24 sm:py-32 bg-background section-pattern scroll-mt-20 relative">
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
       <ScrollReveal>
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-3 font-[Poppins]">
-          Conheça seu Novo Time de Especialistas de IA
-        </h2>
-        <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-14">
-          Cada agente foi treinado especificamente para resolver um dos maiores desafios dos contadores modernos.
-        </p>
+        <div className="text-center mb-16">
+          <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-semibold uppercase tracking-widest">
+            Os 4 Agentes
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-[Poppins] tracking-tight">
+            Conheça seu Novo Time de
+            <br className="hidden sm:block" />
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Especialistas de IA</span>
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Cada agente foi treinado especificamente para resolver um dos maiores desafios dos contadores modernos.
+          </p>
+        </div>
       </ScrollReveal>
 
       <div className="grid md:grid-cols-2 gap-6">
         {agents.map((a, i) => (
-          <ScrollReveal key={i} delay={i * 0.12}>
-            <div className="bg-card rounded-xl border border-border p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
-              <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${a.color} flex items-center justify-center mb-4`}>
-                <a.icon className="text-primary-foreground" size={28} />
+          <ScrollReveal key={i} delay={i * 0.1}>
+            <div className="glass-card rounded-2xl p-7 card-hover h-full flex flex-col group relative overflow-hidden">
+              {/* Subtle gradient overlay on hover */}
+              <div className={`absolute inset-0 bg-gradient-to-br ${a.gradient} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-500`} />
+
+              <div className="relative z-10 flex flex-col h-full">
+                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${a.gradient} flex items-center justify-center mb-5 shadow-lg ${a.glow} group-hover:scale-110 transition-transform duration-300`}>
+                  <a.icon className="text-primary-foreground" size={26} />
+                </div>
+                <h3 className="font-[Poppins] font-bold text-foreground text-xl mb-2">{a.name}</h3>
+                <p className="text-sm text-accent font-semibold mb-2 flex items-center gap-1.5">
+                  <ArrowRight size={12} />
+                  {a.benefit}
+                </p>
+                <p className="text-sm text-muted-foreground mb-3 font-medium">{a.does}</p>
+                <p className="text-sm text-muted-foreground mt-auto leading-relaxed">{a.desc}</p>
               </div>
-              <h3 className="font-[Poppins] font-bold text-foreground text-xl mb-1">{a.name}</h3>
-              <p className="text-sm text-accent font-semibold mb-2">{a.benefit}</p>
-              <p className="text-sm text-muted-foreground mb-3">{a.does}</p>
-              <p className="text-sm text-muted-foreground mt-auto">{a.desc}</p>
             </div>
           </ScrollReveal>
         ))}
