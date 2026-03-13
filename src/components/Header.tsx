@@ -17,7 +17,7 @@ const Header = () => {
           <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center text-primary-foreground font-bold text-lg font-[Poppins]">
             A
           </div>
-          <span className="font-[Poppins] font-bold text-foreground text-lg hidden sm:inline">Acelerador Contábil</span>
+          <span className="font-[Poppins] font-bold text-foreground text-lg hidden sm:inline"><span className="font-[Poppins] font-bold text-foreground text-lg hidden sm:inline">Pack Contador Estratégico</span></span>
         </button>
 
         <nav className="hidden md:flex items-center gap-8">
