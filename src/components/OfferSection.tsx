@@ -34,11 +34,11 @@ const OfferSection = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 items-start">
-          <ScrollReveal className="min-w-0 w-full">
-            <div className="space-y-2.5 sm:space-y-4 w-full">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 items-start min-w-0 w-full">
+          <ScrollReveal className="min-w-0 w-full overflow-hidden">
+            <div className="space-y-2.5 sm:space-y-4 w-full min-w-0">
               {items.map((item, i) => (
-                <div key={i} className="glass-card rounded-lg sm:rounded-xl p-3 sm:p-4 flex items-start gap-2.5 sm:gap-4">
+                <div key={i} className="glass-card rounded-lg sm:rounded-xl p-3 sm:p-4 flex items-start gap-2.5 sm:gap-4 max-w-full">
                   <div className="w-5 h-5 sm:w-7 sm:h-7 rounded-full bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
                     <Check className="text-accent" size={10} />
                   </div>
@@ -48,8 +48,8 @@ const OfferSection = () => {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal>
-            <div className="rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary via-primary to-accent p-[3px] sm:p-1 shadow-2xl shadow-primary/20 glow-primary max-w-full overflow-hidden">
+          <ScrollReveal className="min-w-0 w-full overflow-hidden">
+            <div className="rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary via-primary to-accent p-[3px] sm:p-1 shadow-2xl shadow-primary/20 glow-primary w-full overflow-hidden">
               <div className="rounded-[calc(1rem-3px)] sm:rounded-[calc(1.5rem-4px)] bg-gradient-to-br from-primary to-accent p-5 sm:p-8 lg:p-10 text-center relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10" style={{
                   backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
