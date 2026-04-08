@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 import ScrollReveal from "./ScrollReveal";
 
 const items = [
-  "Acesso Vitalício ao Pack Contador Estratégico IA",
-  "Agente Social Cont para dominar as redes sociais",
-  "Agente Mara Salles para vender mais e melhor",
-  "Agente Contuber para se tornar autoridade no YouTube",
-  "Agente Analista de DRE para consultoria estratégica",
-  "Bônus: Aula com Anderson Maisse sobre Serviços de Alto Valor",
+  "Acesso Vitalício ao Pack Contador Estratégico\u00a0IA",
+  "Agente Social Cont para dominar as redes\u00a0sociais",
+  "Agente Mara Salles para vender mais e\u00a0melhor",
+  "Agente Contuber para se tornar autoridade no\u00a0YouTube",
+  "Agente Analista de DRE para consultoria\u00a0estratégica",
+  "Bônus: Aula com Anderson Maisse sobre Serviços de Alto\u00a0Valor",
 ];
 
 const OfferSection = () => {
@@ -18,7 +18,7 @@ const OfferSection = () => {
     <section id="offer" className="py-16 sm:py-24 lg:py-32 bg-secondary relative overflow-hidden scroll-mt-20">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] sm:w-[800px] h-[300px] sm:h-[400px] bg-accent/5 rounded-full blur-[150px]" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 relative z-10">
         <ScrollReveal>
           <div className="text-center mb-10 sm:mb-16">
             <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-semibold uppercase tracking-widest">
