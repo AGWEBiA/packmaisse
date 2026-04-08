@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 import ScrollReveal from "./ScrollReveal";
 
 const items = [
-  "Acesso Vitalício ao Pack Contador Estratégico\u00a0IA",
-  "Agente Social Cont para dominar as redes\u00a0sociais",
-  "Agente Mara Salles para vender mais e\u00a0melhor",
-  "Agente Contuber para se tornar autoridade no\u00a0YouTube",
-  "Agente Analista de DRE para consultoria\u00a0estratégica",
-  "Bônus: Aula com Anderson Maisse sobre Serviços de Alto\u00a0Valor",
+  "Acesso Vitalício ao Pack Contador Estratégico IA",
+  "Agente Social Cont para dominar as redes sociais",
+  "Agente Mara Salles para vender mais e melhor",
+  "Agente Contuber para se tornar autoridade no YouTube",
+  "Agente Analista de DRE para consultoria estratégica",
+  "Bônus: Aula com Anderson Maisse sobre Serviços de Alto Valor",
 ];
 
 const OfferSection = () => {
@@ -35,20 +35,20 @@ const OfferSection = () => {
         </ScrollReveal>
 
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 items-start">
-          <ScrollReveal direction="left" className="min-w-0 w-full">
-            <div className="space-y-2.5 sm:space-y-4 w-full min-w-0">
+          <ScrollReveal className="min-w-0 w-full">
+            <div className="space-y-2.5 sm:space-y-4 w-full">
               {items.map((item, i) => (
-                <div key={i} className="glass-card rounded-lg sm:rounded-xl p-3 sm:p-4 flex w-full min-w-0 items-start gap-2.5 sm:gap-4 card-hover">
+                <div key={i} className="glass-card rounded-lg sm:rounded-xl p-3 sm:p-4 flex items-start gap-2.5 sm:gap-4">
                   <div className="w-5 h-5 sm:w-7 sm:h-7 rounded-full bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
                     <Check className="text-accent" size={10} />
                   </div>
-                  <span className="flex-1 min-w-0 text-[13px] leading-snug sm:text-base text-foreground font-medium break-words text-balance">{item}</span>
+                  <span className="flex-1 min-w-0 text-[13px] leading-snug sm:text-base text-foreground font-medium break-words">{item}</span>
                 </div>
               ))}
             </div>
           </ScrollReveal>
 
-          <ScrollReveal direction="right">
+          <ScrollReveal>
             <div className="rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary via-primary to-accent p-[3px] sm:p-1 shadow-2xl shadow-primary/20 glow-primary max-w-full overflow-hidden">
               <div className="rounded-[calc(1rem-3px)] sm:rounded-[calc(1.5rem-4px)] bg-gradient-to-br from-primary to-accent p-5 sm:p-8 lg:p-10 text-center relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10" style={{
