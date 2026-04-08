@@ -44,7 +44,7 @@ const HeroSection = () => {
 
             <ScrollReveal delay={0.2}>
               <p className="text-base sm:text-lg text-primary-foreground/80 mb-3 sm:mb-4 font-[Poppins] font-medium max-w-lg mx-auto lg:mx-0">
-                Acelere seu crescimento com o novo pack de IA de Anderson Maisse
+                Acelere seu crescimento com o novo pack de IA
               </p>
             </ScrollReveal>
 
