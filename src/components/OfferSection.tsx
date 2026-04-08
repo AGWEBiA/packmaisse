@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 import ScrollReveal from "./ScrollReveal";
 
 const items = [
-  "Acesso Vitalício ao Pack Contador Estratégico IA",
-  "Agente Social Cont para dominar as redes sociais",
-  "Agente Mara Salles para vender mais e melhor",
-  "Agente Contuber para se tornar autoridade no YouTube",
-  "Agente Analista de DRE para consultoria estratégica",
-  "Bônus: Aula com Anderson Maisse sobre Serviços de Alto Valor",
+  "Acesso Vitalício ao Pack Contador Estratégico\u00a0IA",
+  "Agente Social Cont para dominar as redes\u00a0sociais",
+  "Agente Mara Salles para vender mais e\u00a0melhor",
+  "Agente Contuber para se tornar autoridade no\u00a0YouTube",
+  "Agente Analista de DRE para consultoria\u00a0estratégica",
+  "Bônus: Aula com Anderson Maisse sobre Serviços de Alto\u00a0Valor",
 ];
 
 const OfferSection = () => {
