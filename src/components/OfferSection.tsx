@@ -18,7 +18,7 @@ const OfferSection = () => {
     <section id="offer" className="py-16 sm:py-24 lg:py-32 bg-secondary relative overflow-hidden scroll-mt-20">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] sm:w-[800px] h-[300px] sm:h-[400px] bg-accent/5 rounded-full blur-[150px]" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 relative z-10">
         <ScrollReveal>
           <div className="text-center mb-10 sm:mb-16">
             <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-semibold uppercase tracking-widest">
