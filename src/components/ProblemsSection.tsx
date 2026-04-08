@@ -18,9 +18,9 @@ const ProblemsSection = () => (
             Os Desafios
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-4 font-[Poppins] tracking-tight">
-            Se você é um contador, provavelmente
+             Se você é um contador, provavelmente
             <br className="hidden sm:block" />
-            <span className="text-destructive"> já sentiu isso na pele</span>
+            <span className="text-destructive"> já passou por UM desses desafios abaixo...</span>
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
             Você não está sozinho. Esses são os desafios que mais de 3000 escritórios contábeis enfrentam todos os dias.
