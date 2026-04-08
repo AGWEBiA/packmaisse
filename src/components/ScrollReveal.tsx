@@ -12,8 +12,8 @@ const ScrollReveal = ({ children, className, delay = 0, direction = "up" }: Prop
   const variants = {
     hidden: {
       opacity: 0,
-      y: direction === "up" ? 40 : 0,
-      x: direction === "left" ? -40 : direction === "right" ? 40 : 0,
+      y: direction === "up" ? 32 : 0,
+      x: direction === "left" ? -24 : direction === "right" ? 24 : 0,
     },
     visible: {
       opacity: 1, y: 0, x: 0,
