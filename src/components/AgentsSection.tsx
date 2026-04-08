@@ -21,8 +21,8 @@ const AgentsSection = () => (
             <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Especialistas de IA</span>
           </h2>
-          <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
-            Cada agente foi treinado especificamente para resolver um dos maiores desafios dos contadores modernos.
+          <p className="text-base sm:text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto font-medium leading-relaxed">
+            Cada agente foi treinado especificamente para resolver um dos <span className="text-accent font-bold">maiores desafios</span> dos contadores modernos.
           </p>
         </div>
       </ScrollReveal>
