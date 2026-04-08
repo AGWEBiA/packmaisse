@@ -34,15 +34,15 @@ const OfferSection = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 items-start overflow-hidden">
           <ScrollReveal direction="left">
-            <div className="space-y-2.5 sm:space-y-4">
+            <div className="space-y-2.5 sm:space-y-4 overflow-hidden">
               {items.map((item, i) => (
-                <div key={i} className="glass-card rounded-lg sm:rounded-xl p-3 sm:p-4 flex items-start gap-2.5 sm:gap-4 card-hover min-w-0">
+                <div key={i} className="glass-card rounded-lg sm:rounded-xl p-3 sm:p-4 flex items-start gap-2.5 sm:gap-4 card-hover overflow-hidden">
                   <div className="w-5 h-5 sm:w-7 sm:h-7 rounded-full bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
                     <Check className="text-accent" size={10} />
                   </div>
-                  <span className="text-[13px] leading-snug sm:text-base text-foreground font-medium break-words hyphens-auto">{item}</span>
+                  <span className="text-[13px] leading-snug sm:text-base text-foreground font-medium break-words min-w-0">{item}</span>
                 </div>
               ))}
             </div>
