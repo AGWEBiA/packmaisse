@@ -63,13 +63,14 @@ const OfferSection = () => {
                   <p className="text-primary-foreground/70 text-xs sm:text-sm mb-2">Mas hoje, você tem acesso por apenas:</p>
                   <p className="text-primary-foreground text-4xl sm:text-6xl font-[Poppins] font-extrabold mb-1 tracking-tight">R$ 297</p>
                   <p className="text-primary-foreground/60 text-xs sm:text-sm mb-6 sm:mb-10">ou 12x de R$ 29,70</p>
-                  <Button
-                    size="lg"
-                    onClick={scroll}
-                    className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 w-full py-5 sm:py-7 text-sm sm:text-base font-bold shadow-xl rounded-xl"
-                  >
-                    Quero Acelerar Meu Escritório Agora!
-                  </Button>
+                  <a href="https://pay.kiwify.com.br/8HMYice" target="_blank" rel="noopener noreferrer" className="w-full">
+                    <Button
+                      size="lg"
+                      className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 w-full py-5 sm:py-7 text-sm sm:text-base font-bold shadow-xl rounded-xl"
+                    >
+                      Quero Acelerar Meu Escritório Agora!
+                    </Button>
+                  </a>
                   <div className="flex items-center justify-center gap-2 mt-4 sm:mt-5">
                     <Shield className="text-primary-foreground/60 shrink-0" size={12} />
                     <span className="text-primary-foreground/60 text-[10px] sm:text-xs">Garantia de 7 dias ou seu dinheiro de volta</span>
