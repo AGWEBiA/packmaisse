@@ -62,7 +62,7 @@ const OfferSection = () => {
                   <p className="text-primary-foreground/60 line-through text-lg sm:text-2xl font-[Poppins] font-bold mb-3 sm:mb-6">R$ 1.988</p>
                   <p className="text-primary-foreground/70 text-xs sm:text-sm mb-2">Mas hoje, você tem acesso por apenas:</p>
                   <p className="text-primary-foreground text-4xl sm:text-6xl font-[Poppins] font-extrabold mb-1 tracking-tight">R$ 297</p>
-                  <p className="text-primary-foreground/60 text-xs sm:text-sm mb-6 sm:mb-10">ou 12x de R$ 29,70</p>
+                  <p className="text-primary-foreground/60 text-xs sm:text-sm mb-6 sm:mb-10">ou 12x de R$ 30,72</p>
                   <a href="https://pay.kiwify.com.br/8HMYice" target="_blank" rel="noopener noreferrer" className="w-full">
                     <Button
                       size="lg"
