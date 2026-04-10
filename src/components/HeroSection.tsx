@@ -57,7 +57,7 @@ const HeroSection = () => {
             <ScrollReveal delay={0.4}>
               <Button
                 size="lg"
-                onClick={() => scroll("offer")}
+                onClick={() => scroll("offer-price")}
                 className="bg-gradient-to-r from-accent to-emerald-500 hover:opacity-90 text-accent-foreground px-8 sm:px-10 py-6 sm:py-7 text-sm sm:text-base font-bold animate-pulse-soft shadow-2xl shadow-accent/30 rounded-xl w-full sm:w-auto"
               >
                 Quero Acelerar Meu Escritório Agora

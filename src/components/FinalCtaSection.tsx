@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import ScrollReveal from "./ScrollReveal";
 
 const FinalCtaSection = () => {
-  const scroll = () => document.getElementById("offer")?.scrollIntoView({ behavior: "smooth" });
+  const scroll = () => document.getElementById("offer-price")?.scrollIntoView({ behavior: "smooth" });
 
   return (
     <section className="py-16 sm:py-24 lg:py-32 hero-dark relative overflow-hidden">
