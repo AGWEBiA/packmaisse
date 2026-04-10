@@ -36,7 +36,7 @@ const FinalCtaSection = () => {
           <Button
             size="lg"
             onClick={scroll}
-            className="bg-gradient-to-r from-accent to-emerald-500 hover:opacity-90 text-accent-foreground px-8 sm:px-12 py-6 sm:py-7 text-sm sm:text-base font-bold animate-pulse-soft shadow-2xl shadow-accent/30 rounded-xl w-full sm:w-auto"
+            className="bg-gradient-to-r from-accent to-emerald-500 hover:opacity-90 text-accent-foreground px-4 sm:px-12 py-6 sm:py-7 text-sm sm:text-base font-bold animate-pulse-soft shadow-2xl shadow-accent/30 rounded-xl w-full sm:w-auto whitespace-normal text-center max-w-full"
           >
             Sim, Eu Quero Transformar Minha Contabilidade com IA!
             <ArrowRight className="ml-2" size={18} />
